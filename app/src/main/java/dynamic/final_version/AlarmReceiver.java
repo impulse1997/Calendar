@@ -27,7 +27,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         String description = "description";
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel = new NotificationChannel(channelId,name, NotificationManager.IMPORTANCE_HIGH);
-            channel.setDescription(description);
+
             NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
