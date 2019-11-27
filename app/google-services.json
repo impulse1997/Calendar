@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "782701561026",
+    "firebase_url": "https://calendar-198f3.firebaseio.com",
+    "project_id": "calendar-198f3",
+    "storage_bucket": "calendar-198f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782701561026:android:bc9c236b08aecdb578675b",
+        "android_client_info": {
+          "package_name": "dynamic.final_version"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782701561026-nthtuji7m10u2tsh2gqrkvftr6802b38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dynamic.final_version",
+            "certificate_hash": "7c700f08970920ab2dc6d4a3a2f069fe68442cda"
+          }
+        },
+        {
+          "client_id": "782701561026-7279p5uenunod5gsta09e1ip5l342r0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-76uonmNtPgz_V6B1U1Vgjd-RhNEBkR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782701561026-7279p5uenunod5gsta09e1ip5l342r0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
