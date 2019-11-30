@@ -90,6 +90,7 @@ public class CustomCalendarView extends LinearLayout {
                 final View addView = LayoutInflater.from(parent.getContext()).inflate(R.layout.add_newevent_layout, null);
                 final EditText EventName = addView.findViewById(R.id.eventname);
                 final TextView EventTime = addView.findViewById(R.id.eventtime);
+               //final EditText EventMail =addView.findViewById(R.id.emailname);
                 ImageButton SetTime = addView.findViewById(R.id.seteventtime);
                 final CheckBox alarmMe = addView.findViewById(R.id.alarmme);
                 Calendar dateCalendar = Calendar.getInstance();
@@ -214,7 +215,7 @@ public class CustomCalendarView extends LinearLayout {
         intent.putExtra("id", RequestCode);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context,RequestCode,intent,PendingIntent.FLAG_ONE_SHOT);
         AlarmManager alarmManager = (AlarmManager)context.getApplicationContext().getSystemService(Context.ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pendingIntent);
+        alarmManager.set(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis()-900000,pendingIntent);
     }
 
     private ArrayList<Events> CollectEventByDate(String date){

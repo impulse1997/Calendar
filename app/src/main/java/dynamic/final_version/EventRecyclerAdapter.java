@@ -171,7 +171,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         intent.putExtra("id", RequestCode);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context,RequestCode,intent,PendingIntent.FLAG_ONE_SHOT);
         AlarmManager alarmManager = (AlarmManager)context.getApplicationContext().getSystemService(Context.ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pendingIntent);
+        alarmManager.set(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis()-900000,pendingIntent);
     }
     private void cancelAlarm(int RequestCode){
         Intent intent = new Intent(context.getApplicationContext(),AlarmReceiver.class);
